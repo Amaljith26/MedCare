@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-leh0#ai=8raw5r55pvja#5g85t-!wx(pj0(!wsyq(1w&0igdr0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -67,6 +67,7 @@ SESSION_COOKIE_SECURE = True  # Secure session cookies
 CSRF_TRUSTED_ORIGINS = [
     "http://web-production-82524.up.railway.app",
 ]
+
 ROOT_URLCONF = 'MedCare.urls'
 
 TEMPLATES = [
