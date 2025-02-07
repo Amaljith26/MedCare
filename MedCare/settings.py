@@ -60,6 +60,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_COOKIE_SECURE = True  # Ensure CSRF cookie is sent over HTTPS
+SESSION_COOKIE_SECURE = True  # Secure session cookies
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://web-production-82524.up.railway.app",
+]
 ROOT_URLCONF = 'MedCare.urls'
 
 TEMPLATES = [
