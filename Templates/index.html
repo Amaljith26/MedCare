@@ -32,16 +32,8 @@
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
               <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="#about">About Us</a></li>
-              <li class="nav-item dropdown px-2">
-                <a class="nav-link dropdown-toggle" href="#departments" id="departmentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Departments
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="departmentsDropdown">
-                    <li><a class="" href="{% url 'check' %}">Predict Heart Disease</a></li>
-                    <li><a class="" href="{% url 'doctor' %}">Find Doctor</a></li>
-                    <li><a class="" href="{% url 'booking' %}">OP Booking</a></li>
-                </ul>
-              </li>
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="{% url 'doctor' %}">Doctors</a></li>
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="{% url 'booking' %}">Booking</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="#blogshere">Blogs</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="{% url 'medlist' %}">Medicines</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="#findUs">Contact</a></li>
