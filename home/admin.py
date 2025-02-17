@@ -1,7 +1,7 @@
 from django.contrib import admin
-from . models import Appointment
+from . models import Booking
 # Register your models here.
 
-@admin.register(Appointment)
+@admin.register(Booking)
 class AppointmentInfos(admin.ModelAdmin):
-    list_display = ('name','phone','category','email','message')
+    list_display = ('name','age','phone','category','email','message')

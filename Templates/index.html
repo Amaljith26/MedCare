@@ -39,6 +39,7 @@
                 <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
                     <li><a class="dropdown-item" href="{% url 'check' %}">Predict Heart Disease</a></li>
                     <li><a class="dropdown-item" href="{% url 'doctor' %}">Find Doctor</a></li>
+                    <li><a class="dropdown-item" href="{% url 'booking' %}">OP Booking</a></li>
                 </ul>
               </li>
               <li class="nav-item px-2"><a class="nav-link" href="#blogshere">Blogs</a></li>
@@ -63,7 +64,7 @@
             <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="{% static 'img/gallery/hero.png' %}" alt="hero-header" /></div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
               <h1 class="fw-light font-base fs-6 fs-xxl-7">AI-Powered Healthcare <strong></strong>for you.<br />&nbsp;<strong>Fast, Accurate and Personalized Care</strong></h1>
-              <p class="fs-1 mb-5">You can get the care you need 24/7 – be it online or in <br />person. You will be treated by caring specialist doctors. </p><a class="btn btn-lg btn-primary rounded-pill" href="#appointmentForm" role="button">Make an Appointment</a>
+              <p class="fs-1 mb-5">You can get the care you need 24/7 – be it online or in <br />person. You will be treated by caring specialist doctors. </p><a class="btn btn-lg btn-primary rounded-pill" href="{% url 'booking' %}" role="button">Make an Appointment</a>
             </div>
           </div>
         </div>
@@ -140,11 +141,10 @@
       
 
 
-      <section class="bg-secondary">
+      <section class=""  style="background-color: #283779;">
         <div class="bg-holder" >
         </div>
-
-        <div class="container">
+        <div class="container" style="background-color: #283779;">
           <div class="row align-items-center">
             <div class="col-md-5 col-xxl-6"><img class="img-fluid" src="{% static 'assets/img/gallery/image13.jpeg' %}" alt="..." /></div>
             <div class="col-md-7 col-xxl-6 text-center text-md-start">
@@ -156,10 +156,7 @@
         </div>
       </section>
 
-
-      
       <section class="pb-0" id="about">
-
         <div class="container">
           <div class="row">
             <div class="col-12 py-3">
@@ -169,16 +166,12 @@
             </div>
           </div>
         </div>
-        
-
       </section>
       
-
       <section class="py-5">
         <div class="bg-holder bg-size" >
         </div>
         <!--/.bg-holder-->
-
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 order-lg-1 mb-5 mb-lg-0"><img class="fit-cover rounded-circle w-100" src="{% static 'assets/img/gallery/health-care.png' %}" alt="..." /></div>
@@ -186,7 +179,7 @@
               <h2 class="fw-bold mb-4">We are developing a healthcare <br class="d-none d-sm-block" />system around you</h2>
               <p>We think that everyone should have easy access to excellent <br class="d-none d-sm-block" />healthcare. Our aim is to make the procedure as simple as <br class="d-none d-sm-block" />possible for our patients and to offer treatment no matter<br class="d-none d-sm-block" />where they are — in person or at their convenience. </p>
               <div class="py-3">
-                <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Learn more </button>
+                <a class="btn btn-lg btn-outline-primary rounded-pill" href="https://indianexpress.com/article/cities/chandigarh/pgi-digi-seva-patient-9838664/" >Learn more </a>
               </div>
             </div>
           </div>
@@ -194,20 +187,17 @@
       </section>
 
       <section class="pb-0">
-
         <div class="container">
           <div class="row">
             <div class="col-12 py-3">
               <div class="bg-holder bg-size" >
               </div>
               <!--/.bg-holder-->
-
               <h1 class="text-center">OUR DOCTORS</h1>
             </div>
           </div>
         </div>
         <!-- end of .container-->
-
       </section>
      
 
@@ -216,7 +206,6 @@
         <div class="bg-holder bg-size" >
         </div>
         <!--/.bg-holder-->
-
         <div class="container">
           <div class="row flex-center">
             <div class="col-xl-10 px-0">
@@ -396,20 +385,20 @@
                     <div class="col-sm-9 text-center text-sm-start pt-3 pt-sm-0">
                       <h2>Fantastic Response!</h2>
                       <div class="my-2"><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star-half-alt me-2"></i><i class="far fa-star"></i></div>
-                      <p>This medical and health care facility distinguishes itself from the competition by providing technologically advanced medical and health care. A mobile app and a website are available via which you can easily schedule appointments, get online consultations, and see physicians, who will assist you through the whole procedure. And all of the prescriptions, medications, and other services they offer are 100% genuine, medically verified, and proved. I believe that the Livedoc staff is doing an outstanding job. Highly recommended their health care services.</p>
+                      <p>This medical and health care facility distinguishes itself from the competition by providing technologically advanced medical and health care. A mobile app and a website are available via which you can easily schedule appointments, get online consultations, and see physicians, who will assist you through the whole procedure. And all of the prescriptions, medications, and other services they offer are 100% genuine, medically verified, and proved. Highly recommended their health care services.</p>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                   <div class="row h-100">
                     <div class="col-sm-3 text-center"><img src="{% static 'assets/img/gallery/people-who-loves.png' %}" width="100" alt="" />
-                      <h5 class="mt-3 fw-medium text-secondary">Jhon Doe</h5>
-                      <p class="fw-normal mb-0">UI/UX Designer</p>
+                      <h5 class="mt-3 fw-medium text-secondary">Amaljith</h5>
+                      <p class="fw-normal mb-0">Python Developer</p>
                     </div>
                     <div class="col-sm-9 text-center text-sm-start pt-3 pt-sm-0">
                       <h2>Fantastic Response!</h2>
                       <div class="my-2"><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star-half-alt me-2"></i><i class="far fa-star"></i></div>
-                      <p>This medical and health care facility distinguishes itself from the competition by providing technologically advanced medical and health care. A mobile app and a website are available via which you can easily schedule appointments, get online consultations, and see physicians, who will assist you through the whole procedure. And all of the prescriptions, medications, and other services they offer are 100% genuine, medically verified, and proved. I believe that the Livedoc staff is doing an outstanding job. Highly recommended their health care services.</p>
+                      <p>This medical and health care facility distinguishes itself from the competition by providing technologically advanced medical and health care. A mobile app and a website are available via which you can easily schedule appointments, get online consultations, and see physicians, who will assist you through the whole procedure. And all of the prescriptions, medications, and other services they offer are 100% genuine, medically verified, and proved. Highly recommended their health care services.</p>
                     </div>
                   </div>
                 </div>
@@ -422,7 +411,7 @@
                     <div class="col-sm-9 text-center text-sm-start pt-3 pt-sm-0">
                       <p class="fw-normal mb-0">Web Designer/ Django Developer</p>
                       <div class="my-2"><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star me-2"></i><i class="fas fa-star-half-alt me-2"></i><i class="far fa-star"></i></div>
-                      <p>This medical and health care facility distinguishes itself from the competition by providing technologically advanced medical and health care. A mobile app and a website are available via which you can easily schedule appointments, get online consultations, and see physicians, who will assist you through the whole procedure. And all of the prescriptions, medications, and other services they offer are 100% genuine, medically verified, and proved. I believe that the Livedoc staff is doing an outstanding job. Highly recommended their health care services.</p>
+                      <p>This medical and health care facility distinguishes itself from the competition by providing technologically advanced medical and health care. A mobile app and a website are available via which you can easily schedule appointments, get online consultations, and see physicians, who will assist you through the whole procedure. And all of the prescriptions, medications, and other services they offer are 100% genuine, medically verified, and proved.  Highly recommended their health care services.</p>
                     </div>
                   </div>
                 </div>
@@ -436,74 +425,6 @@
                   </ol>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="py-5">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12 py-3">
-              <div class="bg-holder bg-size" >
-              </div>
-              <!--/.bg-holder-->
-
-              <h1 class="text-center">APPOINTMENT</h1>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-     
-
-
-      <section class="py-8" id="appointmentForm">
-        <div class="container">
-          <div class="row">
-            <div class="bg-holder bg-size" >
-            </div>
-            <!--/.bg-holder-->
-
-            <div class="col-lg-6 z-index-2 mb-5"><img class="w-100" src="{% static 'img/gallery/appointment.png' %}"alt="..." /></div>
-            <div class="col-lg-6 z-index-2">
-              <form class="row g-3" method="post"   action="{% url 'appointment' %}">
-                <div><strong>Enter your Details </strong></div>
-                {% csrf_token %}
-                <div class="col-md-6">
-                  <label class="visually-hidden" for="inputName">Name</label>
-                  <input class="form-control form-livedoc-control" name="name" id="inputName" type="text" placeholder="Name" />
-                </div>
-                <div class="col-md-6">
-                  <label class="visually-hidden" for="inputPhone">Phone</label>
-                  <input class="form-control form-livedoc-control" name="phone" id="inputPhone" type="text" placeholder="Phone" />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label visually-hidden" for="inputCategory" >Category</label>
-                  <select class="form-select" id="inputCategory" name="category" placeholder="Select">
-                    <option>Orthopedics</option>
-                    <option> General medicine</option>
-                    <option> Ophthalmologist</option>
-                    <option> Skin Care</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label visually-hidden" for="inputEmail">Email</label>
-                  <input class="form-control form-livedoc-control" name="email"   id="inputEmail" type="email" placeholder="Email" />
-                </div>
-                <div class="col-md-12">
-                  <label class="form-label visually-hidden" for="validationTextarea">Message</label>
-                  <textarea class="form-control form-livedoc-control" name="message" id="validationTextarea" placeholder="Message" style="height: 250px;" required="required"></textarea>
-                </div>
-                <div class="col-12">
-                  <div class="d-grid">
-                    <button class="btn btn-primary rounded-pill" type="submit">Submit</button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -579,7 +500,58 @@
             </div>
           </div>
         </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="{% static 'assets/img/gallery/covid-19.png' %}" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Health</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">Nov 22, 2024</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Heart Disease: The Most Up-to-Date Information</h5><a class="stretched-link" href="https://www.ndtv.com/feature/sitting-too-long-linked-to-heart-disease-not-even-exercise-can-undo-study-7052459">read full article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="{% static 'assets/img/gallery/laboratories.png' %}" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Lifestyle</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">Nov 25, 2024</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Importance of Accreditation for Laboratories</h5><a class="stretched-link" href="https://www.health.harvard.edu/topics/exercise-and-fitness">read full article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="{% static 'assets/img/gallery/nicotine.png' %}" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Health</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">Nov 28, 2024</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">The dangers of nicotine are addressed in depth</h5><a class="stretched-link" href="https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/who-defines-physical-inactivity-says-this-much-exercise-weekly-can-guarantee-good-health/articleshow/111272400.cms">read full article</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="card h-100 shadow card-span rounded-3"><img class="card-img-top rounded-top-3" src="{% static 'assets/img/gallery/treatment.png' %}" alt="news" />
+                <div class="card-body"><span class="fs--1 text-primary me-3">Health</span>
+                  <svg class="bi bi-calendar2 me-2" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"></path>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"> </path>
+                  </svg><span class="fs--1 text-900">Nov 30, 2024</span><span class="fs--1"></span>
+                  <h5 class="font-base fs-lg-0 fs-xl-1 my-3">Cancer Curable??</h5><a class="stretched-link" href="https://today.uconn.edu/2024/11/smokers-and-never-smokers-are-at-risk-for-lung-cancer-and-uconn-health-is-on-the-forefront-of-finding-it-early/">read full article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+
       <section class="bg-primary" id="findUs">
         <div class="bg-holder bg-size" >
         </div>
@@ -607,43 +579,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="py-0 bg-secondary">
-        <div class="bg-holder opacity-25 ">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row py-8">
-            <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0"><a class="text-decoration-none" href="#"><img src="{% static 'assets/img/gallery/logo1.png' %}" height="51" alt="" /></a>
-              <p class="text-light my-4">The world's most trusted <br />health company.</p>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
-              <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">Departments</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="footer-link" href="#!">Eye care</a></li>
-                <li class="lh-lg"><a class="footer-link" href="#!">Cardiac are</a></li>
-                <li class="lh-lg"><a class="footer-link" href="#!">Heart care</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
-              <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif">Membership</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="footer-link" href="#!">Free trial</a></li>
-                <li class="lh-lg"><a class="footer-link" href="#!">Silver</a></li>
-                <li class="lh-lg"><a class="footer-link" href="#!">Premium</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
-              <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif"> Customer Care</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="footer-link" href="#!">About Us</a></li>
-                <li class="lh-lg"><a class="footer-link" href="#!">Contact US</a></li>
-                <li class="lh-lg"><a class="footer-link" href="#!">Get Update</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>    
       </section>
     </main>
   

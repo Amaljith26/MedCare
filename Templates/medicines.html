@@ -46,14 +46,13 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone"><strong class="text-primary">MediCare</strong>Meds</a>
+              <a href="" class="js-logo-clone"><strong class="text-primary">MediCare</strong>Meds</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li class="active"><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
                 <li class="has-children">
                   <a href="#">Products</a>
                   <ul class="dropdown">
@@ -61,15 +60,11 @@
                     <li class="has-children">
                       <a href="#">Vitamins</a>
                       <ul class="dropdown">
-                        <li><a href="#">Supplements</a></li>
-                        <li><a href="#">Vitamins</a></li>
-                        <li><a href="#">Diet Nutrition</a></li>
-                        <li><a href="#">Tea/Coffee</a></li>
+                        <li><a href="">Supplements</a></li>
+                        <li><a href="">Vitamins</a></li>
+                        <li><a href="">Diet Nutrition</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Diet /Nutrition</a></li>
-                    
-                    
                   </ul>
                 </li>
                 <li><a href="about.html">About</a></li>
@@ -171,7 +166,7 @@
          <div class="col-lg-7">
            <h3 class="text-white">Sign up to avail discount up to 55% OFF</h3>
            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam.</p>
-           <p class="mb-0"><a href="#" class="btn btn-outline-white">Sign up</a></p>
+           <p class="mb-0"><a href="{% url 'signup' %}" class="btn btn-outline-white">Sign up</a></p>
          </div>
         </div>
       </div>
@@ -186,40 +181,42 @@
           <div class="card-body">
             <h5 class="card-title">Tussicare</h5>
             <p class="card-text">Relieves dry cough and throat irritation</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>  <!-- Buy Now Button -->
           </div>
-          
         </div>
         <div class="card">
           <img class="card-img-top" src="{% static 'images1/product_02.png' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Vicks Formula 44</h5>
             <p class="card-text">Quick relief from persistent cough</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>  <!-- Buy Now Button -->
           </div>
-          
         </div>
         <div class="card">
           <img class="card-img-top" src="{% static 'images1/product_03.png' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Benadryl</h5>
             <p class="card-text">Eases chest congestion and suppresses cough</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>  <!-- Buy Now Button -->
           </div>
-          
         </div>
       </div>
+      
       <div class="card-deck">
         <div class="card">
           <img class="card-img-top" src="{% static 'images1/product_04.png' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Ascoril LS</h5>
             <p class="card-text">Loosens mucus for productive cough relief</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>  <!-- Buy Now Button -->
           </div>
-          
         </div>
         <div class="card">
           <img class="card-img-top" src="{% static 'images1/product_05.png' %}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Corex DX</h5>
             <p class="card-text">Effective for allergic coughs</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>  <!-- Buy Now Button -->
           </div> 
         </div>
         <div class="card">
@@ -227,14 +224,15 @@
           <div class="card-body">
             <h5 class="card-title">Chericof</h5>
             <p class="card-text">Soothes cough and cold symptoms</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>  <!-- Buy Now Button -->
           </div>  
         </div>
       </div>
-      
     </section>
 
     
-    <footer class="site-footer bg-light">  
+    
+    <footer class="site-footer bg-light" >  
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -269,19 +267,7 @@
 
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-              
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved 
-              <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="" target="_blank"
-                class="text-primary">MediCare</a>
-             
-            </p>
-          </div>
-
-        </div>
+        
       </div>
     </footer>
   </div>
