@@ -18,7 +18,8 @@
               <li class="nav-item px-2"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="{% url 'BMI' %}">BMI Index</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="{% url 'medlist' %}">Doctors</a></li>
-            </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="#!">Sign In</a>
+              <li class="nav-item px-2"><a class="nav-link" href="{% url 'upload_record' %}">Medical Records</a></li> 
+            </ul>
           </div>
         </div>
       </nav>
@@ -122,7 +123,53 @@
     </div>
       </section>
       {% endif %}
-                
+      
+    <div style="text-align: center; max-width: 600px; margin: auto;">
+        <h3>CP (Chest Pain Type): Type of chest pain experienced by the patient (1-4)</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>1: Typical angina</li>
+            <li>2: Atypical angina</li>
+            <li>3: Non-anginal pain</li>
+            <li>4: Asymptomatic</li>
+        </ul>
+    
+        <h3>trestbps (Resting Blood Pressure): Blood pressure (mm Hg) measured while at rest</h3>
+    
+        <h3>chol (Serum Cholesterol): Cholesterol level in mg/dL</h3>
+    
+        <h3>fbs (Fasting Blood Sugar): Fasting blood sugar > 120 mg/dL (1 = True, 0 = False)</h3>
+    
+        <h3>restecg (Resting Electrocardiographic Results): Results of ECG test (0-2)</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>0: Normal</li>
+            <li>1: ST-T wave abnormality</li>
+            <li>2: Left ventricular hypertrophy</li>
+        </ul>
+    
+        <h3>thalach (Maximum Heart Rate Achieved): Highest heart rate during exercise</h3>
+    
+        <h3>exang (Exercise Induced Angina): Chest pain triggered by exercise (1 = Yes, 0 = No)</h3>
+    
+        <h3>oldpeak (ST Depression): ST depression induced by exercise compared to rest</h3>
+    
+        <h3>slope (Slope of Peak Exercise ST Segment): The slope of the ST segment during peak exercise</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>1: Upsloping</li>
+            <li>2: Flat</li>
+            <li>3: Downsloping</li>
+        </ul>
+    
+        <h3>ca (Number of Major Vessels): Count of major blood vessels (0-3) colored by fluoroscopy</h3>
+    
+        <h3>thal (Thalassemia): Blood disorder test result (0-2)</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>0: Normal</li>
+            <li>1: Fixed defect</li>
+            <li>2: Reversible defect</li>
+        </ul>
+    </div>
+    
+    
       
 
           <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>

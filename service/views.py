@@ -5,6 +5,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from django.conf import settings
 from .models import HeartData,BmiIndex
+from django.contrib.auth.decorators import login_required
 
 
 # Load the trained model and scaler from disk
@@ -21,6 +22,7 @@ def load_model_and_scaler():
 def check(request):
     return render(request,'heartform.html')
 
+@login_required
 def predict(request):
     prediction = None
     if request.method == 'POST':
@@ -80,6 +82,7 @@ from django.shortcuts import render
 from .models import BmiIndex
 
 from django.shortcuts import render
+
 
 def bmicheck(request):
     bmi = None

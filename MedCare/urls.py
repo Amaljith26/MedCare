@@ -27,7 +27,8 @@ urlpatterns = [
     path('Medicines/',include('medicine.urls')),
     path('Check/',include('service.urls')),
     path('',include('signup.urls')),
-    path('', include('doctors.urls'))
+    path('', include('doctors.urls')),
+    path('', include('EHR.urls')), 
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
